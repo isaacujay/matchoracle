@@ -1,0 +1,40 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+*.swp
+
+# Secrets and env (never commit real keys)
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.pem
+kaggle.json
+
+# Logs
+*.log
+logs/
+
+# Data (large or user-private) - keep folder structure only
+data/raw/**
+data/processed/**
+data/user_uploads/**
+!data/**/.gitkeep
+!data/external/team_aliases/*.csv
+
+# Trained models
+models/**
+!models/**/.gitkeep
+
+# Reports
+reports/figures/**
+reports/backtests/**
+!reports/**/.gitkeep
+
+# Notebooks
+.ipynb_checkpoints/
